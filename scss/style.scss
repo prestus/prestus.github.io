@@ -1,0 +1,76 @@
+$pr_menu : #003c92;
+$pr_drop : #fff8;
+$pr_btn : #FBB03B;
+$pr_tex_btn: #130C76;
+
+$theme-colors:(	
+	"menu" : $pr_menu,
+	"drop" : $pr_drop,
+	"prbtn" : $pr_btn,
+	"prbtntx" : $pr_tex_btn
+);
+
+.menu{
+	top : 80px;
+	position: fixed;
+}
+
+.titulo-1{
+	font-size: 34pt;
+}
+
+li a{
+	font-size: 16pt;
+}
+
+
+header{
+	width: 100%;
+	position: absolute;
+	top: 105px;
+	display: flex;
+
+}
+
+
+header nav{
+	justify-content:flex-end;
+	display: flex;
+
+}
+
+@media (max-width: 719px){
+	header{
+	top: 140px;
+
+	}
+
+}
+
+html{
+overflow-x:hidden;
+}
+
+.banner{
+	color: #fff;
+	background-image: url(../img/img1.jpg);
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.banner2{
+	color: #fff;
+	background-image: url(../img/img4.jpg);
+	background-size: cover;
+	min-height: 50vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
